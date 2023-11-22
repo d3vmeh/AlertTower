@@ -10,11 +10,12 @@
 #define RF95_FREQ 868.0
 RH_RF95 driver(8, 3); // Adafruit Feather M0 with RFM95 
 
+AlertTower tower;
 
 struct AlertTower{
   char id[3];
-  int charge;
   char message[3];
+  float temperatureF;
 };
 
 void TransmitMessage(AlertTower tower){
