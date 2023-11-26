@@ -24,8 +24,8 @@ void TransmitMessage(AlertTower tower){
   driver.send(buf, sizeof(tower));
 }
 
-void WaitForFeedback(){
-
+bool WaitForFeedback(){
+return true;
 }
 
 
